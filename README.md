@@ -1,8 +1,5 @@
-# Lec 22
-- Make Checkbox
-- define state for checkbox
-- get checkbox value in State
-- Remove Checkbox value in State
-- interview question
-
-- Look Skills.jsx
+# Lec 23 
+- Radio button store value in stat
+- Radio button if their names are same then select will be only one
+- default selection we use check property in box
+- Dropdown

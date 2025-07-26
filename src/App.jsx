@@ -98,6 +98,28 @@ function App() {
   }
   let students =["student1","student2", "student3"]
   let [stud,setStud]=useState(students[1])
+  
+  const [gender, setGender] = useState("female");
+  const [city, setCity] = useState("Lahore");
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   return (
     <>
      {/* This is code modification for Lec 18*/}
@@ -257,6 +279,29 @@ if display variable exist print heading else null */}
 
         <h1>Lec 22: Check boxes</h1>
         <Skills/>
+
+        {/* Lec 23 */}
+        <h1>Lec 23</h1>
+        
+        <h3> Select Gender</h3>
+        <input type="radio" onChange={(event)=>setGender(event.target.value)} checked={gender=="male"} name="gender" value="male" id="male"/>
+        <label htmlFor="male">Male</label>
+        <input type="radio" onChange={(event)=>setGender(event.target.value)} checked={gender=="female"} name="gender" value="female" id="female"/>
+        <label htmlFor="female">Female</label>
+        <br />
+        <h2>Display Gender : {gender}</h2>
+
+        <h3> Select Cities</h3>
+        <select onChange={(event)=>setCity(event.target.value)} defaultValue={"Lahore"}>
+          <option value="Lahore">Lahore</option>
+          <option value="Karachi">Karachi</option>
+          <option value="Faisalabad">Faisalabad</option>
+
+  
+        </select>
+
+        <h2>Display Gender : {city}</h2>
+
       </div>
     </>
   );
